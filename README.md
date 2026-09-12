@@ -26,6 +26,9 @@ Testing the pipeline on out-of-distribution (OOD) field video streams.
 
 ![Field Video Demo](assets/demo_video.gif)
 
+### YOLO Training Metrics
+![YOLO Training Results](assets/yolo_results.png)
+
 #### 🔍 Engineering Analysis & Known Limitations
 The model demonstrates high precision on the validation set, but encounters specific edge cases during zero-shot real-world video inference:
 * **Domain Shift:** The field video contains environmental variations and thermal noise not present in the training distribution.
