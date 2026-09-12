@@ -1,7 +1,7 @@
 # Thermal Rail Segmentation & Object Detection Pipeline
 
 Computer Vision pipeline designed for automated infrastructure segmentation and anomaly detection on thermal/infrared video streams. 
-This project integrates state-of-the-art Deep Learning models to extract track masks and identify obstacles in low-visibility environments.
+This project integrates Deep Learning models to extract track masks and identify obstacles in low-visibility environments.
 
 Developed as a Bachelor's Thesis project in Computer Engineering.
 
