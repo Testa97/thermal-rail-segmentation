@@ -45,3 +45,29 @@ thermal-rail-segmentation/
 │   ├── datasets.py           # Dataloader logic
 │   └── wrappers.py           # Dataset wrappers with custom augmentations
 └── README.md
+🚀 Getting Started
+1. Installation
+Clone the repository and install the required dependencies:
+git clone [https://github.com/TuoUsername/thermal-rail-segmentation.git](https://github.com/TuoUsername/thermal-rail-segmentation.git)
+cd thermal-rail-segmentation
+pip install -r requirements.txt
+Note: This project requires the official SAM 2 repository for base weights and core architecture.
+
+2. Run Batch Inference
+Test the end-to-end pipeline on the provided sample data:
+python src/batch_inference.py \
+  --image_dir data/sample/images \
+  --mask_dir data/sample/labels \
+  --weights models/best.pt \
+  --output_dir results_batch/
+
+3. Custom Training
+To run the SAM2 adapter fine-tuning loop with custom augmentations:
+python src/train.py --config configs/thermal-rail-sam2.yaml --name my_custom_training
+
+⚙️ Key Technical Highlights
+VRAM Optimization: Forced .cpu() offloading during validation loops to prevent CUDA Out Of Memory errors.
+
+Backbone Freezing: Frozen SAM2 image encoder to retain zero-shot generalization while training only the custom adapter.
+
+Custom Augmentations: Implemented robust preprocessing and RandomErasing to prevent overfitting on small domain-specific datasets.
