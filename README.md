@@ -30,7 +30,7 @@ Testing the pipeline on out-of-distribution (OOD) field video streams.
 The model demonstrates high precision on the validation set, but encounters specific edge cases during zero-shot real-world video inference:
 * **Domain Shift:** The field video contains environmental variations and thermal noise not present in the training distribution.
 * **Temporal Consistency:** Inference is currently performed frame-by-frame, causing minor flickering in the segmentation masks.
-* **Next Steps:** Implementing multi-object tracking (e.g., DeepSORT or ByteTrack) and expanding the dataset with diverse field-recorded sequences to stabilize the output temporally.
+* **Next Steps:** Enhancing track segmentation accuracy and improving anomaly detection precision in complex scenarios.
 
 ---
 
