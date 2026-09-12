@@ -45,7 +45,7 @@ thermal-rail-segmentation/
 │   ├── datasets.py           # Dataloader logic
 │   └── wrappers.py           # Dataset wrappers with custom augmentations
 └── README.md
-
+```
 ---
 
 ## 🚀 Getting Started
