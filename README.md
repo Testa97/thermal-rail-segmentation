@@ -54,7 +54,7 @@ thermal-rail-segmentation/
 ### 1. Installation
 Clone the repository and install the required dependencies:
 ```bash
-git clone https://github.com/TuoUsername/thermal-rail-segmentation.git
+git clone https://github.com/Testa97/thermal-rail-segmentation.git
 cd thermal-rail-segmentation
 pip install -r requirements.txt
 ```
