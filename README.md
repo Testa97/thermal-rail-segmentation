@@ -37,6 +37,7 @@ The model demonstrates high precision on the validation set, but encounters spec
 ## 📁 Repository Structure
 ```text
 thermal-rail-segmentation/
+├── assets/                   # Demo images and GIFs for documentation
 ├── configs/                  # YAML configuration files for training/inference
 ├── data/sample/              # Sample thermal images and ground truth masks
 ├── src/                      # Source code (Custom SAM2 Adapter & YOLO scripts)
